@@ -1,9 +1,9 @@
-N, M = map(int, input().split())
+# 공백으로 구분
+n, m = map(int, input().split())
 
-A, B, d = map(int, input().split())
+# 방문한 위치를 저장하기 위한 맵을 생성하여 0으로 초기화
 
-# 0은 북쪽, 1은 동쪽, 2는 남쪽, 3은 서쪽
+d = [[0] * m for _ in range(n)]
 
-for map in range(N):
-    place = map(int, input().split())
-    
+# 현재 캐릭터의 x, y 좌표 및 방향 입력 받기
+
